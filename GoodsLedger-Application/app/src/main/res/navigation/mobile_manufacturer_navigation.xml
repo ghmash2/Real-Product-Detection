@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_manufacturer_navigation"
+    app:startDestination="@+id/navigation_manufacturer_home">
+
+    <fragment
+        android:id="@+id/navigation_manufacturer_home"
+        android:name="com.example.goods_ledger.ManufacturerPart.ui.ManufacturerHomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_manufacturer_home" >
+        <action
+            android:id="@+id/action_navigation_manufacturer_home_to_navigation_manufacturer_factories"
+            app:destination="@id/navigation_manufacturer_factories" />
+        <action
+            android:id="@+id/action_navigation_manufacturer_home_to_navigation_manufacturer_products"
+            app:destination="@id/navigation_manufacturer_products" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_manufacturer_factories"
+        android:name="com.example.goods_ledger.ManufacturerPart.ui.Factories.ManufacturerFactoriesFragment"
+        android:label="Factories"
+        tools:layout="@layout/fragment_manufacturer_factories" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_manufacturer_products"
+        android:name="com.example.goods_ledger.ManufacturerPart.ui.Products.ManufacturerProductsFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_products" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_manufacturer_options"
+        android:name="com.example.goods_ledger.ManufacturerPart.ui.ManufacturerOptionsFragment"
+        android:label="Options"
+        tools:layout="@layout/fragment_manufacturer_options" >
+    </fragment>
+
+</navigation>

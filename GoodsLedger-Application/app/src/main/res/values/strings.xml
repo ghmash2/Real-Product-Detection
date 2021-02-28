@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Goods-Ledger</string>
+    <string name="title_activity_manufacturer_home">ManufacturerHomeActivity</string>
+    <string name="title_activity_consumer_home">ConsumerHomeActivity</string>
+</resources>

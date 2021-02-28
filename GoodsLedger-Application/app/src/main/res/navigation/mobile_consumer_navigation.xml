@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_consumer_navigation"
+    app:startDestination="@+id/navigation_consumer_home">
+
+    <fragment
+        android:id="@+id/navigation_consumer_home"
+        android:name="com.example.goods_ledger.ConsumerPart.ui.ConsumerHomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_consumer_home" >
+        <action
+            android:id="@+id/action_navigation_consumer_home_to_navigation_consumer_products"
+            app:destination="@id/navigation_consumer_products" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_consumer_products"
+        android:name="com.example.goods_ledger.ConsumerPart.ui.OwnedProducts.ConsumerProductsFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_consumer_products" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_consumer_queries"
+        android:name="com.example.goods_ledger.ConsumerPart.ui.QueriedProducts.ConsumerQueriesFragment"
+        android:label="Queries"
+        tools:layout="@layout/fragment_consumer_queries" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_consumer_options"
+        android:name="com.example.goods_ledger.ConsumerPart.ui.ConsumerOptionsFragment"
+        android:label="Options"
+        tools:layout="@layout/fragment_consumer_options" >
+    </fragment>
+
+</navigation>
